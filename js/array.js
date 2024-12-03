@@ -2,18 +2,18 @@
 
 let foods = ["chicken", "pizza", "kimbab"];
 //add elemnet to end of array
-foods.push("rice");
+foods.push("rice", "soup");
 console.log("push=", foods);
 
 //delete element to end of array
 foods.pop();
 console.log("\npop=", foods);
 
-//add element to beginning of array
+//delete element to beginning of array
 foods.shift();
 console.log("\nshift=", foods);
 
-//delete element to beginning of array
+//add element to beginning of array
 foods.unshift("hamburger");
 console.log("\nunshift=", foods);
 
@@ -29,6 +29,7 @@ console.log("\nAdd using splice=", foods);
 foods.splice(1, 1, "sushi");
 console.log("\nChange using splice=", foods);
 
+//check a specific value is include
 let includeFoods = foods.includes("hamburger");
 console.log("\nUse include =", includeFoods);
 
@@ -39,8 +40,6 @@ console.log("\nUse index of=", foodIndexOF);
 //make new array copy from foods
 let newFoods = foods.slice(0, 2);
 console.log("\nUse slice=", newFoods);
-
-foods.forEach((foods) => console.log("\nforEach=", foods));
 
 //make a new array by transforming each element of the array
 let upperFoods = foods.map((foods) => foods.toUpperCase());
