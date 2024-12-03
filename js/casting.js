@@ -1,7 +1,9 @@
 function numToString() {
   let num = 123;
+
   let str = String(num);
   console.log("num to str =", str);
+
   let str1 = num.toString();
   console.log("num to str1 = ", str1);
 }
