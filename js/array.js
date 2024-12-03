@@ -41,10 +41,6 @@ console.log("\nUse index of=", foodIndexOF);
 let newFoods = foods.slice(0, 2);
 console.log("\nUse slice=", newFoods);
 
-//make a new array by transforming each element of the array
-let upperFoods = foods.map((foods) => foods.toUpperCase());
-console.log("\nmap=", upperFoods);
-
 //array consisting only of elements that meet the conditions
 let filterFoods = foods.filter((foods) => foods.length > 5);
 console.log("\nfilter=", filterFoods);
