@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar" id="sidebar">
+        <div class="logo">
+          <i class="fa-solid fa-cube"></i>
+          <span class="text">HYPER</span>
+        </div>
+        <p class="nav-title">NAVIGATION</p>
+        <ul class="nav">
+          <li class="dashboard-item">
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              <span class="text">Dashboards</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"><span class="text">Analytics</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="text">Ecommerce</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="text">Projects</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="text">CRM</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="text">E-Wallet</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-content">
+        <header>
+          <nav>
+            <div class="nav-left">
+              <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
+              <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search..." />
+                <button>Search</button>
+              </div>
+            </div>
+
+            <div class="nav-right">
+              <ul class="nav-items">
+                <li class="nav-item">
+                  <select class="language-select">
+                    <option value="en">English</option>
+                    <option value="ko">한국어</option>
+                    <option value="fr">Français</option>
+                  </select>
+                </li>
+                <li class="nav-item icons">
+                  <i class="fa-regular fa-bell" title="bell"></i>
+                  <i class="fa-solid fa-grip" title="grip"></i>
+                  <i class="fa-solid fa-gear" title="gear"></i>
+                  <i class="fa-regular fa-moon" title="moon"></i>
+                  <i class="fa-solid fa-expand" title="expand"></i>
+                </li>
+                <li class="nav-item profile">
+                  <div class="profile-circle"></div>
+                  <div class="profile-info">
+                    <span class="profile-name">Dominic Keller</span>
+                    <span class="profile-title">Founder</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div class="dashboard-header">
+          <h4 class="dashboard-title">Dashboard</h4>
+
+          <div class="dashboard-controls">
+            <input type="date" class="calendar" />
+            <button class="control-btn calendar-btn" aria-label="Calendar">
+              <i class="fa-solid fa-calendar"></i>
+            </button>
+            <button class="control-btn">
+              <i class="fa-solid fa-rotate"></i>
+            </button>
+            <button class="control-btn">
+              <i class="fa-solid fa-filter"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dashboard">
+          <div class="dashboard-left">
+            <div class="card-container">
+              <div class="card customers">
+                <div class="card-header">
+                  <h5>Customers</h5>
+                  <div class="icon-container icon-medium">
+                    <i class="fa-solid fa-user-group"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-number">36,254</p>
+                </div>
+                <div class="card-footer">
+                  <i class="fa-solid fa-arrow-up growth-icon up"></i>
+                  <span class="growth-rate up"> 5.27%</span>
+                  <span class="since-text">Since last month</span>
+                </div>
+              </div>
+
+              <div class="card orders">
+                <div class="card-header">
+                  <h5>Orders</h5>
+                  <div class="icon-container icon-medium">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-number">5,543</p>
+                </div>
+                <div class="card-footer">
+                  <i class="fa-solid fa-arrow-down growth-icon down"></i>
+                  <span class="growth-rate down"> 1.08%</span>
+                  <span class="since-text">Since last month</span>
+                </div>
+              </div>
+              <div class="card revenue">
+                <div class="card-header">
+                  <h5>Revenue</h5>
+                  <div class="icon-container icon-large">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-number">$6,254</p>
+                </div>
+                <div class="card-footer">
+                  <i class="fa-solid fa-arrow-up growth-icon down"></i>
+                  <span class="growth-rate down">7.00%</span>
+                  <span class="since-text">Since last month</span>
+                </div>
+              </div>
+
+              <div class="card growth">
+                <div class="card-header">
+                  <h5>Growth</h5>
+                  <div class="icon-container icon-medium">
+                    <i class="fa-solid fa-chart-line"></i>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-number">+30.56%</p>
+                </div>
+                <div class="card-footer">
+                  <i class="fa-solid fa-arrow-down growth-icon up"></i>
+                  <span class="growth-rate up">4.87%</span>
+                  <span class="since-text">Since last month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-right">
+            <div class="chart">
+              <h3>Projections vs Actuals</h3>
+              <img src="chart-placeholder.png" alt="Chart" />
+            </div>
+          </div>
+        </div>
+        <div class="section-gap"></div>
+        <div class="revenue-and-location">
+          <section class="revenue-section">
+            <div class="section-header">REVENUE</div>
+            <div class="revenue-container">
+              <div class="week-summary">
+                <div class="current-week">
+                  <p>Current Week</p>
+                  <h3><span class="dot blue-dot"></span> $58,254</h3>
+                </div>
+                <div class="previous-week">
+                  <p>Previous Week</p>
+                  <h3><span class="dot green-dot"></span> $69,524</h3>
+                </div>
+              </div>
+              <div class="revenue-details">
+                <p class="earnings-text">Today's Earning: $2,562.30</p>
+                <p class="description">
+                  Etiam ultricies nisi vel augue. Curabitur ullamcorper ultrices
+                  nisi. Nam eget dui. Etiam rhoncus...
+                </p>
+                <button class="view-statements">View Statements</button>
+              </div>
+              <div class="revenue-chart">
+                <img src="chart-placeholder.png" alt="Revenue Chart" />
+              </div>
+            </div>
+          </section>
+          <section class="revenue-location-section">
+            <div class="section-header">REVENUE BY LOCATION</div>
+            <div class="location-container">
+              <div class="location-map">
+                <img src="map-placeholder.png" alt="Location Map" />
+              </div>
+              <div class="location-details">
+                <ul>
+                  <li class="location-item new-york">
+                    <div class="location-name">New York</div>
+                    <div class="location-bar">
+                      <div class="fill"></div>
+                    </div>
+                    <div class="location-value">72k</div>
+                  </li>
+                  <li class="location-item san-francisco">
+                    <div class="location-name">San Francisco</div>
+                    <div class="location-bar">
+                      <div class="fill"></div>
+                    </div>
+                    <div class="location-value">39k</div>
+                  </li>
+                  <li class="location-item sydney">
+                    <div class="location-name">Sydney</div>
+                    <div class="location-bar">
+                      <div class="fill"></div>
+                    </div>
+                    <div class="location-value">25k</div>
+                  </li>
+                  <li class="location-item singapore">
+                    <div class="location-name">Singapore</div>
+                    <div class="location-bar">
+                      <div class="fill"></div>
+                    </div>
+                    <div class="location-value">61k</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="additional-section">
+          <div class="top-selling">
+            <h4 class="section-title">TOP SELLING PRODUCTS</h4>
+            <button class="export-btn">
+              Export <i class="fa-solid fa-download"></i>
+            </button>
+            <table class="product-table">
+              <tr>
+                <td class="product-info">
+                  ASOS Ridley High Waist <br />
+                  <span class="product-date">07 April 2018</span>
+                </td>
+                <td class="product-price">
+                  $79.49 <br />
+                  <span class="label">Price</span>
+                </td>
+                <td class="product-quantity">
+                  82 <br />
+                  <span class="label">Quantity</span>
+                </td>
+                <td class="product-amount">
+                  $6,518.18 <br />
+                  <span class="label">Amount</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  ASOS Ridley High Waist <br />
+                  <span class="product-date">07 April 2018</span>
+                </td>
+                <td class="product-price">
+                  $79.49 <br />
+                  <span class="label">Price</span>
+                </td>
+                <td class="product-quantity">
+                  82 <br />
+                  <span class="label">Quantity</span>
+                </td>
+                <td class="product-amount">
+                  $6,518.18 <br />
+                  <span class="label">Amount</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  ASOS Ridley High Waist <br />
+                  <span class="product-date">07 April 2018</span>
+                </td>
+                <td class="product-price">
+                  $79.49 <br />
+                  <span class="label">Price</span>
+                </td>
+                <td class="product-quantity">
+                  82 <br />
+                  <span class="label">Quantity</span>
+                </td>
+                <td class="product-amount">
+                  $6,518.18 <br />
+                  <span class="label">Amount</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  ASOS Ridley High Waist <br />
+                  <span class="product-date">07 April 2018</span>
+                </td>
+                <td class="product-price">
+                  $79.49 <br />
+                  <span class="label">Price</span>
+                </td>
+                <td class="product-quantity">
+                  82 <br />
+                  <span class="label">Quantity</span>
+                </td>
+                <td class="product-amount">
+                  $6,518.18 <br />
+                  <span class="label">Amount</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  ASOS Ridley High Waist <br />
+                  <span class="product-date">07 April 2018</span>
+                </td>
+                <td class="product-price">
+                  $79.49 <br />
+                  <span class="label">Price</span>
+                </td>
+                <td class="product-quantity">
+                  82 <br />
+                  <span class="label">Quantity</span>
+                </td>
+                <td class="product-amount">
+                  $6,518.18 <br />
+                  <span class="label">Amount</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <section class="total-sales">
+            <h4 class="section-title">TOTAL SALES</h4>
+
+            <div class="sales-chart"></div>
+            <ul class="sales-details">
+              <li>
+                <span class="sales-color direct"></span>
+                <span class="sales-type">Direct</span>
+                <span class="sales-amount">$300.56</span>
+              </li>
+              <li>
+                <span class="sales-color affiliate"></span>
+                <span class="sales-type">Affiliate</span>
+                <span class="sales-amount">$135.18</span>
+              </li>
+              <li>
+                <span class="sales-color sponsored"></span>
+                <span class="sales-type">Sponsored</span>
+                <span class="sales-amount">$48.96</span>
+              </li>
+              <li>
+                <span class="sales-color email"></span>
+                <span class="sales-type">E-mail</span>
+                <span class="sales-amount">$154.02</span>
+              </li>
+            </ul>
+          </section>
+          <div class="recent-activity">
+            <div class="recent-header">
+              <h4 class="header-title">RECENT ACTIVITY</h4>
+              <div class="dropdown">⋮</div>
+            </div>
+            <ul class="activity-list">
+              <li>
+                <span class="activity-icon item-sold"></span>
+                <div class="activity-details">
+                  <span class="activity-title">You sold an item</span>
+                  <span class="activity-content">
+                    Paul Burgess just purchased “Hyper - Admin Dashboard”!<br />
+                    <span class="activity-time">5 minutes ago</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <span class="activity-icon product-market"></span>
+                <div class="activity-details">
+                  <span class="activity-title"
+                    >Product on the Bootstrap Market</span
+                  >
+                  <span class="activity-content">
+                    Dave Gamache added Admin Dashboard<br />
+                    <span class="activity-time">30 minutes ago</span>
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <span class="activity-icon item-sold"></span>
+                <div class="activity-details">
+                  <span class="activity-title">You sold an item</span>
+                  <span class="activity-content">
+                    Paul Burgess just purchased “Hyper - Admin Dashboard”!<br />
+                    <span class="activity-time">5 minutes ago</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <span class="activity-icon product-market"></span>
+                <div class="activity-details">
+                  <span class="activity-title"
+                    >Product on the Bootstrap Market</span
+                  >
+                  <span class="activity-content">
+                    Dave Gamache added Admin Dashboard<br />
+                    <span class="activity-time">30 minutes ago</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <span class="activity-icon item-sold"></span>
+                <div class="activity-details">
+                  <span class="activity-title">You sold an item</span>
+                  <span class="activity-content">
+                    Paul Burgess just purchased “Hyper - Admin Dashboard”!<br />
+                    <span class="activity-time">5 minutes ago</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <span class="activity-icon product-market"></span>
+                <div class="activity-details">
+                  <span class="activity-title"
+                    >Product on the Bootstrap Market</span
+                  >
+                  <span class="activity-content">
+                    Dave Gamache added Admin Dashboard<br />
+                    <span class="activity-time">30 minutes ago</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <span class="activity-icon item-sold"></span>
+                <div class="activity-details">
+                  <span class="activity-title">You sold an item</span>
+                  <span class="activity-content">
+                    Paul Burgess just purchased “Hyper - Admin Dashboard”!<br />
+                    <span class="activity-time">5 minutes ago</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <span class="activity-icon product-market"></span>
+                <div class="activity-details">
+                  <span class="activity-title"
+                    >Product on the Bootstrap Market</span
+                  >
+                  <span class="activity-content">
+                    Dave Gamache added Admin Dashboard<br />
+                    <span class="activity-time">30 minutes ago</span>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const sidebar = document.getElementById("sidebar");
+        const toggleButton = document.getElementById("sidebarToggle");
+
+        toggleButton.addEventListener("click", function () {
+          sidebar.classList.toggle("active");
+        });
+      </script>
+    </div>
+  </body>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2023 HYPER. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+</html>
