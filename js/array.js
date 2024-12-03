@@ -49,3 +49,5 @@ console.log("\nmap=", upperFoods);
 //array consisting only of elements that meet the conditions
 let filterFoods = foods.filter((foods) => foods.length > 5);
 console.log("\nfilter=", filterFoods);
+
+//testtest
