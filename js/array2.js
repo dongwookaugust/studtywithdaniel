@@ -20,9 +20,6 @@ for (let fruit of fruits) {
 }
 
 // Using callback function and return new array
-console.log("\nUsing for map() :");
-const upperfruit = fruits.map((fruit) => {
-  return fruit.toUpperCase(); // 과일 이름을 대문자로 변환
-});
-
-console.log("Transformed Fruits:", upperfruit);
+console.log("\nUsing for map :");
+const upperfruit = fruits.map((fruits) => fruits.toUpperCase());
+console.log("\nmap=", upperfruit);
