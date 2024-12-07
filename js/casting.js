@@ -9,8 +9,9 @@ function numToString() {
 }
 
 function strToNum() {
-  let str = "456";
+  let str = "-456";
   let str1 = "4.56";
+
   let num = Number(str);
   console.log("str to num = ", num);
 

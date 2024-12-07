@@ -14,7 +14,7 @@
 //URL, CSS Class Name
 
 //Snake Case
-//모든 단어가 소문자, 단어가_으로 구분(Ex.my_variable_name)
+// 모든 단어가 소문자, 단어가_으로 구분(Ex.my_variable_name)
 //all letter are in lower case and seperate by _(underscore)
 //Python, Ruby, PHP
 
