@@ -49,7 +49,7 @@ function forOfLoop() {
   for (let fruit of fruits) {
     console.log(fruit);
   }
-  // what are the 2 other ways of looping in array and what are their differences?
+
   console.log("-----for of loop end-----");
 }
 function forOfLoop1() {
