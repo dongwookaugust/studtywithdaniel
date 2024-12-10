@@ -1,7 +1,7 @@
 function usePush() {
   let numbers = [];
 
-  numbers.push(10, 20, 30, 40);
+  let addNum = numbers.push(10, 20, 30, 40);
   console.log(numbers);
 }
 usePush();

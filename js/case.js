@@ -6,7 +6,7 @@
 //Camel Case
 //첫번째 단어는 소문자로 시작하고 이후에 단어는 대문자로 시작함. 구분자 없음(Ex.myVariableName)
 //First word start lowercase and subsequent word start capital letter with no seperator
-//JavaScript, java , C#
+//JavaScript, Java , C#, React
 
 //Kebab Case
 //all letter are in lower case and seperate by -(hyphens)

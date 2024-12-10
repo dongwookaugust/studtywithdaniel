@@ -16,7 +16,7 @@ useReduce();
 function useReduce1() {
   const num = [10, 4, 2, 8];
 
-  const smallest = num.reduce((acc, cur) => (cur < acc ? cur : acc));
+  const smallest = num.reduce((acc, cur) => (acc > cur ? cur : acc));
   console.log(smallest);
 }
 useReduce1();

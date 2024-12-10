@@ -1,14 +1,12 @@
 function useForLoop() {
   // 두배로 변형
-  const numbers = [1, 2, 3, 4, 5];
-  const doubleNum = [];
+  let numbers = [1, 2, 3, 4, 5];
+  let doubleNum = [];
 
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      doubleNum.push(numbers[i]);
-    }
+    doubleNum = numbers[i] * 2;
+    console.log(doubleNum);
   }
-  console.log(doubleNum);
 }
 useForLoop();
 
@@ -68,7 +66,7 @@ function useForEach1() {
   //제곱만들기
   let numbers = [2, 3, 4];
 
-  let doubleNum = numbers.forEach((num) => {
+  let squareNum = numbers.forEach((num) => {
     console.log(num ** 2);
   });
 }
