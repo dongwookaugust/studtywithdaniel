@@ -263,20 +263,20 @@ add5();
 function addStr() {
   let animals = ["dog", "cat", "rabbit"];
 
-  let strAnimals = animals.forEach((animal) => {
+  animals.forEach((animal) => {
     console.log(animal + "!");
   });
 }
 addStr();
 
-function doubleNum1() {
+function doubleNum1(newNum) {
   let numbers = [2, 3, 4];
 
   for (let num of numbers) {
-    console.log(num ** 2);
+    console.log(num ** newNum);
   }
 }
-doubleNum1();
+doubleNum1(3);
 
 function upperStr() {
   let words = ["hello", "world", "javascript"];

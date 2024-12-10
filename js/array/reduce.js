@@ -32,3 +32,11 @@ function useRedece2() {
   console.log(sum);
 }
 useRedece2();
+
+function useReduce4() {
+  let numbers = [5, 10, 15, 20];
+
+  let addNum = numbers.reduce((acc, cur) => acc + cur, 0);
+  console.log(addNum);
+}
+useReduce4();
