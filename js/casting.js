@@ -24,9 +24,42 @@ function strToNum() {
 
 function strToBoolean() {
   let str = "true";
+  let str1 = "carrot";
+  let str2 = "false";
+  let str3 = "";
+  let num = 0;
+  let num1 = -0;
+  let exNull = null;
+  let exUndifined = undefined;
+  let exNan = NaN;
 
   let bool = Boolean(str);
+  let bool1 = Boolean(str1);
+
+  let bool2 = Boolean(str2);
+  let bool3 = Boolean(str3);
+  let bool4 = Boolean(num);
+  let bool5 = Boolean(num1);
+  let bool6 = Boolean(exNull);
+  let bool7 = Boolean(exUndifined);
+  let bool8 = Boolean(exNan);
+
+  let bool9 = Boolean(true);
+  let bool10 = Boolean(false);
+
   console.log(bool);
+  console.log(bool1);
+  console.log(bool2);
+  console.log(bool3);
+  console.log(bool4);
+  console.log(bool5);
+  console.log(bool6);
+  console.log(bool7);
+  console.log(bool8);
+  console.log(bool9);
+  console.log(bool10);
+
+  //Boolean(false)
 }
 numToString();
 strToNum();
