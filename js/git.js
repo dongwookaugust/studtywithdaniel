@@ -1,7 +1,7 @@
 // source control management
 // pull request/merge request - same thing
 
-//git - manages the change history of source code
+//git - manages the change history of source code//testtest
 //github - platform that makes collaboration with team members easier
 
 //clone - Cloning the entire history of the remote repository to your local machine (copy of the repository)
