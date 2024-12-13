@@ -1,7 +1,9 @@
+// in react, the word "use" it becomes a hook, it has restrictions when and where you can use.
+//
 function usePush() {
   let numbers = [];
 
-  numbers.push(10, 20, 30, 40);
+  let addNum = numbers.push(10, 20, 30, 40);
   console.log(numbers);
 }
 usePush();
@@ -65,8 +67,8 @@ useIndexof();
 function useIncludes() {
   let fruits = ["apple", "banana", "mango"];
 
-  let checkFruits = fruits.includes("banana");
-  console.log(checkFruits);
+  let checkFruits = fruits.includes("Banana");
+  console.log("checkFruits:", checkFruits);
 }
 useIncludes();
 

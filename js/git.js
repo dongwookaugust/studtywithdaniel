@@ -1,13 +1,16 @@
-//git - manages the change history of source code
+// source control management
+// pull request/merge request - same thing
+
+//git - manages the change history of source code//testtest
 //github - platform that makes collaboration with team members easier
 
 //clone - Cloning the entire history of the remote repository to your local machine (copy of the repository)
-//commit - Records the current state of a project in a repository (change(or save) repository)
+//commit - Records the current state of a project in a repository (change(or save) repository). you create a stamp. or  a save point
 //push - Uploads local repository changes to a remote repository (uploaded repository)
 //pull - Downloads from a remote repository into the local repository. (downloaded repository)
 //merge - Consolidate changes from two or more branches into one
 //branching - Create new branch for develop features and fixed independently from the main codebase (new save file)
-//resolve conflict  - occurs when the same part of the same file is modified differently in two branches.
+//resolve conflict  - i also want to change this line. occurs when the same part of the same file is modified differently in two branches. test change here
 
 //git remote add origin https://github.com/dongwookaugust/studtywithdaniel.git  ====>add new repository
 //git branch test1 ===> make new branch
