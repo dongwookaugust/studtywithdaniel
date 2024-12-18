@@ -3,7 +3,7 @@
 let foods = ["chicken", "pizza", "kimbab", "rice", "soup"];
 
 // add gamjatang
-// foods.push("gamjatang");
+foods.push("gamjatang");
 // foods.pop();
 
 const nextFood = foods.pop();
@@ -22,11 +22,11 @@ console.log(`remaining food is ${foods}`);
 // console.log("\npop=", foods);
 
 // //delete element to beginning of array
-// foods.shift();
+foods.shift();
 // console.log("\nshift=", foods);
 
 // //add element to beginning of array
-// foods.unshift("hamburger");
+foods.unshift("hamburger");
 // console.log("\nunshift=", foods);
 
 // //delet a specified number of elements starting from a given index.
@@ -54,7 +54,7 @@ foods.splice(1, 2);
 // console.log("\nUse slice=", newFoods);
 
 // //array consisting only of elements that meet the conditions
-// let filterFoods = foods.filter((foods) => foods.length > 5);
+let filterFoods = foods.filter((foods) => foods.length > 5);
 // console.log("\nfilter=", filterFoods);
 
 //testtest

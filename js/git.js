@@ -1,13 +1,16 @@
-//git - manages the change history of source code
+// source control management
+// pull request/merge request - same thing
+
+//git - manages the change history of source code//test
 //github - platform that makes collaboration with team members easier
 
 //clone - Cloning the entire history of the remote repository to your local machine (copy of the repository)
-//commit - Records the current state of a project in a repository (change(or save) repository)
+//commit - Records the current state of a project in a repository (change(or save) repository). you create a stamp. or  a save point
 //push - Uploads local repository changes to a remote repository (uploaded repository)
-//pull - Downloads from a remote repository into the local repository. (downloaded repository)
+//pull - Downloads from a remote repository into the local repository. (downloaded repository). equal to fetch + merge
 //merge - Consolidate changes from two or more branches into one
 //branching - Create new branch for develop features and fixed independently from the main codebase (new save file)
-//resolve conflict  - occurs when the same part of the same file is modified differently in two branches.
+//resolve conflict  - i also want to change this line. occurs when the same part of the same file is modified differently in two branches. test change here
 
 //git remote add origin https://github.com/dongwookaugust/studtywithdaniel.git  ====>add new repository
 //git branch test1 ===> make new branch
@@ -24,3 +27,7 @@
 // git checkout test2 ===> switch to the test2 branch
 // git pull origin test2 ===> fetch and merge updates from the remote repository's test2 branch
 // git merge origin/test1 ====> merge fetched changes from remote test2 branch into local test2
+
+// git stash and also git stash pop
+// - how git i get change #2 from git stash list?
+// git rebase - what is difference with git rebase and git merge?
