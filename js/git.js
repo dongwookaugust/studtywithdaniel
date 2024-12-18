@@ -29,4 +29,5 @@
 // git merge origin/test1 ====> merge fetched changes from remote test2 branch into local test2
 
 // git stash and also git stash pop
-// git rebase - what is difference with git merge
+// - how git i get change #2 from git stash list?
+// git rebase - what is difference with git rebase and git merge?
